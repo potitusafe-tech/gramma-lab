@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INFINITIVE | English Grammar</title>
+<meta name="description" content="เรียนรู้ Infinitive ตั้งแต่พื้นฐาน พร้อมตัวอย่างและแบบฝึกหัดภาษาอังกฤษ">
+<link rel="canonical" href="https://potitusafe-tech.github.io/gramma-lab/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://potitusafe-tech.github.io/gramma-lab/">
+<meta property="og:title" content="INFINITIVE | GrammarLab">
+<meta property="og:description" content="เรียนรู้ Infinitive ตั้งแต่พื้นฐาน พร้อมตัวอย่างและแบบฝึกหัดภาษาอังกฤษ">
+<meta property="og:image" content="https://potitusafe-tech.github.io/gramma-lab/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GrammarLab Infinitive: เรียนให้เข้าใจ ใช้ให้เป็น">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="INFINITIVE | GrammarLab">
+<meta name="twitter:description" content="เรียนรู้ Infinitive ตั้งแต่พื้นฐาน พร้อมตัวอย่างและแบบฝึกหัดภาษาอังกฤษ">
+<meta name="twitter:image" content="https://potitusafe-tech.github.io/gramma-lab/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,6 +37,8 @@ section{padding:70px 8%;scroll-margin-top:75px}.section-head{max-width:680px;mar
 .verbs{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.verb{padding:10px 15px;background:white;border:1px solid #e6ebf3;border-radius:10px;color:var(--navy);font-weight:800}
 .mistake{border-left:4px solid #e7a43b;background:white;padding:16px 20px;border-radius:0 12px 12px 0;margin:12px 0}.wrong{color:#c04c4c;text-decoration:line-through;margin-right:10px}.right{color:#16805c;font-weight:800}
 .quiz{background:white;border:1px solid #e8edf4;border-radius:20px;padding:25px;max-width:760px}.question{font-size:19px;font-weight:850;color:var(--navy);margin:0 0 18px}.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.option{background:#f4f7fc;border:2px solid transparent;padding:13px;border-radius:11px;text-align:left;cursor:pointer;font-size:15px;color:var(--ink)}.option:hover{border-color:#9bb6f1}.option.selected{border-color:var(--blue);background:#edf3ff}.feedback{margin-top:18px;font-weight:750;min-height:26px}.next{margin-top:15px;display:none}
+.game-invite{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:760px;margin-top:20px;padding:18px 22px;border-radius:16px;background:#edf3ff}
+.game-invite p{margin:0;color:#52647e;font-weight:650}
 footer{background:#10233d;color:#c7d2e2;padding:30px 8%;font-size:13px;display:flex;justify-content:space-between;gap:20px}
 footer a{color:#ffd66b;font-weight:700;text-decoration:none}
 footer a:hover{text-decoration:underline}
@@ -73,7 +89,7 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 .hero-credits{display:flex;flex-direction:column;gap:3px;margin:16px 0 0;color:#71809a;font-family:"Prompt","Noto Sans Thai",sans-serif;font-size:13px;line-height:1.7}
 
 
-.games-button{display:inline-flex;align-items:center;justify-content:center;margin-left:14px;padding:9px 17px;min-height:40px;border:1px solid #d9e2f0;border-radius:12px;background:#f2f6fc;color:#243653;font:700 13px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer;transition:background .2s,border-color .2s}
+.games-button{display:inline-flex;align-items:center;justify-content:center;margin-left:14px;padding:11px 20px;min-height:46px;border:1px solid #d9e2f0;border-radius:12px;background:#f2f6fc;color:#243653;font:700 15px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer;transition:background .2s,border-color .2s}
 .games-button:hover{background:#e7eef9;border-color:#b9c9e2}
 .games-button:focus-visible{outline:3px solid #91b6ee;outline-offset:2px}
 .owner-button{padding:9px 14px;min-height:40px;border:1px solid #d9e2f0;border-radius:12px;background:#fff;color:#243653;font:700 13px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer}
@@ -91,12 +107,12 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 .owner-overview h3{margin:20px 0 6px;color:var(--navy)}
 .owner-overview p,.owner-overview li{line-height:1.7}
 .owner-overview ul,.owner-overview ol{padding-left:24px}
-@media(max-width:520px){.games-button{margin-left:6px;padding:8px 12px;font-size:12px}}
+@media(max-width:520px){.games-button{margin-left:6px;padding:10px 15px;min-height:44px;font-size:14px}}
 
 
 .games-menu{position:absolute;top:calc(100% + 10px);left:0;z-index:50;width:210px;padding:8px;background:#fff;border:1px solid #e1e7f0;border-radius:14px;box-shadow:0 12px 30px rgba(35,54,83,.12)}
 .games-menu[hidden]{display:none}
-.game-row{display:flex;align-items:center;justify-content:space-between;width:100%;padding:12px 13px;border:0;border-radius:9px;background:transparent;color:#243653;text-align:left;font:700 13px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer}
+.game-row{display:flex;align-items:center;justify-content:space-between;width:100%;padding:15px 16px;border:0;border-radius:9px;background:transparent;color:#243653;text-align:left;font:700 15px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer}
 .game-row+ .game-row{border-top:1px solid #edf0f5}
 .game-row:hover{background:#f2f6fc}
 .games-button{position:relative}
@@ -162,6 +178,39 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 .game-result-screen .game-restart{margin-top:8px;background:#ffd66b;color:#142b4a}
 @media(max-width:600px){.game1-panel{margin:16px 8px 40px;padding:15px}.game-scene{min-height:220px}.game-answers{grid-template-columns:1fr}.game-hud strong{font-size:14px}.game-runner,.game-obstacle{font-size:40px}}
 
+.game2-panel{max-width:820px;margin:26px auto 60px;padding:24px;background:#f7f9fc;border:1px solid #e2e9f3;border-radius:22px;color:#233653}
+.game2-panel[hidden]{display:none}
+.game2-top{display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.game2-title{flex:1;min-width:220px;text-align:center}
+.game2-title h2{margin:5px 0;color:#1f3150;font-size:clamp(23px,4vw,34px)}
+.game2-title p{margin:0;color:#687891;font-size:13px}
+.game2-modes{display:flex;justify-content:center;gap:10px;margin:20px 0}
+.game2-mode{border:1px solid #d5deeb;border-radius:10px;padding:10px 16px;background:#fff;color:#2d4261;font:700 14px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer}
+.game2-mode[aria-pressed="true"]{border-color:#3569d4;background:#edf3ff;color:#244f9f}
+.game2-hud{display:flex;justify-content:space-around;gap:10px;margin:16px 0;padding:12px;background:#fff;border:1px solid #e5eaf2;border-radius:14px}
+.game2-hud div{display:flex;flex-direction:column;align-items:center;gap:3px}
+.game2-hud small{color:#8390a4;font-size:10px;font-weight:800;letter-spacing:1px}
+.game2-hud strong{color:#253a5a;font-size:16px}
+.game2-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.game2-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;aspect-ratio:1;border:1px solid #d8e1ed;border-radius:13px;background:linear-gradient(145deg,#3569d4,#244a91);color:#fff;padding:7px;text-align:center;font-family:"Prompt","Noto Sans Thai",sans-serif;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.game2-card:hover:not(:disabled){transform:translateY(-2px)}
+.game2-card:focus-visible,.game2-mode:focus-visible{outline:3px solid #91b6ee;outline-offset:2px}
+.game2-card .card-back{font-size:clamp(19px,4vw,30px);font-weight:800}
+.game2-card .game2-card-type{font-size:10px;font-weight:700;opacity:.8}
+.game2-card .game2-card-text{font-size:clamp(11px,2vw,16px);font-weight:750;line-height:1.35;overflow-wrap:anywhere}
+.game2-card[data-type="image"] .game2-card-text{font-size:clamp(22px,5vw,36px)}
+.game2-card.is-open{border-color:#a9bfeb;background:#fff;color:#243653}
+.game2-card.is-matched{border-color:#78bd8a;background:#e8f7ed;color:#236b3a}
+.game2-card.is-mismatch{border-color:#e4a092;background:#fff0ed;color:#a63f30}
+.game2-card:disabled{cursor:default}
+.game2-status{min-height:28px;margin:13px 0 0;text-align:center;color:#52647e;font-weight:700}
+.game2-status[data-state="win"]{color:#16805c}
+.game2-status[data-state="loss"]{color:#bd4d3c}
+.game2-actions{display:flex;justify-content:center;gap:10px;margin:14px 0 0}
+.game2-start,.game2-restart{border:0;border-radius:11px;padding:11px 20px;min-height:44px;background:#2d5f9d;color:#fff;font:700 14px "Prompt","Noto Sans Thai",sans-serif;cursor:pointer}
+.game2-restart{background:#59677c}
+.game2-start[hidden],.game2-restart[hidden]{display:none}
+@media(max-width:600px){.game2-panel{margin:16px 8px 40px;padding:15px}.game2-grid{gap:6px}.game2-card{border-radius:9px;padding:4px}.game2-card .game2-card-type{font-size:8px}.game2-hud strong{font-size:13px}.game2-mode{padding:9px 12px;font-size:12px}}
 
 /* Obstacles travel along the road toward the runner, then stop for the question. */
 .game-obstacle{left:105%;right:auto;bottom:52px;opacity:1}
@@ -231,10 +280,10 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 <button class="games-button" id="gamesButton" type="button" aria-expanded="false" aria-controls="gamesMenu">🎮 เกม</button>
 <button class="owner-button" id="ownerButton" type="button">Claim owner</button>
 <div class="games-menu" id="gamesMenu" hidden aria-label="รายการเกม">
-  <button type="button" class="game-row">GAME 1 <span>→</span></button>
-  <button type="button" class="game-row">GAME 2 <span>→</span></button>
-  <button type="button" class="game-row">GAME 3 <span>→</span></button>
-  <button type="button" class="game-row">GAME 4 <span>→</span></button>
+  <button type="button" class="game-row">GAME 1 • หนีตำรวจ <span>→</span></button>
+  <button type="button" class="game-row">GAME 2 • จับคู่คำศัพท์ <span>→</span></button>
+  <button type="button" class="game-row" disabled aria-disabled="true">GAME 3 • Unavailable <span>—</span></button>
+  <button type="button" class="game-row" disabled aria-disabled="true">GAME 4 • Unavailable <span>—</span></button>
 </div>
 
 <dialog class="owner-dialog" id="ownerDialog" aria-labelledby="ownerTitle">
@@ -254,7 +303,7 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 <main id="course">
 <div class="glasses-background" id="courseDecorations" hidden aria-hidden="true"><span style="--top:12%;--left:76%;--duration:13s;--delay:-2s">🕶️</span><span style="--top:52%;--left:82%;--duration:16s;--delay:-9s">🕶️</span><span style="--top:72%;--left:12%;--duration:15s;--delay:-6s">🕶️</span><span style="--top:24%;--left:2%;--duration:11s;--delay:-4s">🧬</span><span style="--top:68%;--left:91%;--duration:12s;--delay:-8s">🍬</span><span style="--top:42%;--left:91%;--duration:10s;--delay:-3s">π</span><span class="buu-mark" style="--top:86%;--left:4%;--duration:13s;--delay:-5s">BUU</span></div>
 <div class="page active" data-page="0"><div class="hero" id="intro"><div><div class="eyebrow">ENGLISH GRAMMAR • BEGINNER GUIDE</div><h1>INFINITIVE<span>.</span><br>เรียนให้เข้าใจ<br>ใช้ให้เป็น</h1><p>ทำความเข้าใจ Infinitive ตั้งแต่พื้นฐาน พร้อมตัวอย่างประโยคภาษาอังกฤษ คำแปล และแบบฝึกหัดสั้น ๆ ที่ช่วยให้คุณนำไปใช้ได้จริง</p><button class="btn" id="startLearning" type="button">เริ่มเรียนรู้ →</button></div>
-<div class="hero-card"><div class="label">THE BASIC FORMULA</div><div class="formula">to + <b>V.1</b></div><div class="example"><strong>I want to learn English.</strong><small>ฉันต้องการเรียนภาษาอังกฤษ</small></div><div class="example"><strong>She decided to leave.</strong><small>เธอตัดสินใจที่จะออกไป</small></div><div class="example"><strong>She likes to wear glasses.</strong><small>เธอชอบใส่แว่น</small></div></div></div></div>
+<div class="hero-card"><div class="label">THE BASIC FORMULA</div><div class="formula">to + <b>V.1</b></div><div class="example"><strong>I want to learn English.</strong><small>ฉันต้องการเรียนภาษาอังกฤษ</small></div><div class="example"><strong>He decided to study engineering.</strong><small>เขาตัดสินใจเรียนวิศวกรรม</small></div><div class="example"><strong>She likes to wear glasses.</strong><small>เธอชอบใส่แว่น</small></div></div></div></div>
 <div class="page course-page" data-page="1"><section id="lessons"><div class="section-head"><div class="eyebrow">01 / THE BASICS</div><h2>Infinitive คืออะไร?</h2><p>Infinitive คือรูปกริยาพื้นฐานที่ไม่ผันตามประธานหรือกาล โดยรูปแบบที่พบบ่อยมี 2 ประเภทหลัก</p></div>
 <div class="cards">
 <div class="card"><span class="tag">TYPE 01</span><h3>To-infinitive</h3><div class="pattern">to + V.1</div><p>ใช้ to ตามด้วยคำกริยารูปพื้นฐาน มักใช้เพื่อบอกความต้องการ การตัดสินใจ หรือจุดประสงค์</p><div class="sample"><b>They hope to win.</b><span>พวกเขาหวังว่าจะชนะ</span></div><div class="sample"><b>I study to improve my English.</b><span>ฉันเรียนเพื่อพัฒนาภาษาอังกฤษ</span></div></div>
@@ -265,13 +314,13 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
 <div class="mistake"><span class="wrong">She wants go.</span><span class="right">She wants to go. ✓</span><div>หลัง wants ต้องใช้ to + V.1</div></div>
 <div class="mistake"><span class="wrong">He can to swim.</span><span class="right">He can swim. ✓</span><div>หลัง can ใช้ V.1 โดยไม่ใส่ to</div></div>
 <div class="mistake"><span class="wrong">He decided studying engineering.</span><span class="right">He decided to study engineering. ✓</span><div>decide มักตามด้วย to-infinitive</div></div></section></div>
-<div class="page course-page" data-page="4"><section id="quiz"><div class="section-head"><div class="eyebrow">04 / QUICK PRACTICE</div><h2>ลองทดสอบความเข้าใจ</h2><p>เลือกคำตอบที่ถูกต้อง แล้วกดตรวจคำตอบ</p></div><div class="quiz"><div id="qcount" class="eyebrow">QUESTION 1 OF 5</div><p class="question" id="question">I want ___ a doctor.</p><div class="options" id="options"></div><div class="feedback" id="feedback" aria-live="polite"></div><button class="btn next" id="next">ข้อต่อไป →</button></div></section></div>
+<div class="page course-page" data-page="4"><section id="quiz"><div class="section-head"><div class="eyebrow">04 / QUICK PRACTICE</div><h2>ลองทดสอบความเข้าใจ</h2><p>เลือกคำตอบที่ถูกต้อง แล้วกดตรวจคำตอบ</p></div><div class="quiz"><div id="qcount" class="eyebrow">QUESTION 1 OF 5</div><p class="question" id="question">I want ___ a doctor.</p><div class="options" id="options"></div><div class="feedback" id="feedback" aria-live="polite"></div><button class="btn next" id="next">ข้อต่อไป →</button></div><div class="game-invite"><p>ทำแบบทดสอบเสร็จแล้ว ลองฝึกต่อด้วยเกม</p><button class="btn" type="button" id="openGamesFromLesson">🎮 เล่นเกม</button></div></section></div>
 <div class="page-controls" aria-label="ควบคุมบทเรียน"><button type="button" id="prevPage" class="step-btn secondary" disabled>← ย้อนกลับ</button><div class="progress-wrap"><span id="pageLabel">หน้าแรก</span><div class="progress-track"><div id="progressFill"></div></div></div><button type="button" id="nextPage" class="step-btn">เริ่มเรียนรู้ →</button></div>
 
-<section class="game1-panel" id="game1Panel" hidden aria-label="Run from the Police game">
+<section class="game1-panel" id="game1Panel" hidden aria-label="เกมหนีตำรวจ">
   <div class="game1-top">
     <button type="button" class="game-back" id="gameBack">← กลับไปหน้าเกม</button>
-    <div class="game1-title"><span class="game-kicker">GRAMMARLAB ARCADE</span><h2>RUN FROM THE POLICE</h2><p>หนีตำรวจให้รอด! ตอบคำถาม Infinitive ให้ถูกเพื่อผ่านสิ่งกีดขวาง</p></div>
+    <div class="game1-title"><span class="game-kicker">GRAMMARLAB ARCADE</span><h2>หนีตำรวจ</h2><p>หนีตำรวจให้รอด! ตอบคำถาม Infinitive ให้ถูกเพื่อผ่านสิ่งกีดขวาง</p></div>
   </div>
   <div class="game-hud">
     <div><small>HEARTS</small><strong id="gameHearts" aria-live="polite">❤️ ❤️ ❤️</strong></div>
@@ -318,8 +367,30 @@ header{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
   <p class="game-instructions">วิธีเล่น: ↑ ↓ หรือ W / S เปลี่ยนเลน • ← เดินหน้า / → ถอยหลัง (A / D) แต่ห้ามแซงตำรวจ • หลบสิ่งกีดขวางได้ = ข้ามคำถาม</p>
 </section>
 
+<section class="game2-panel" id="game2Panel" hidden aria-label="เกมจับคู่คำศัพท์ ความหมาย และภาพ">
+  <div class="game2-top">
+    <button type="button" class="game-back" id="game2Back">← กลับไปหน้าเกม</button>
+    <div class="game2-title"><span class="game-kicker">GRAMMARLAB ARCADE • GAME 2</span><h2>จับคู่คำศัพท์ ความหมาย และภาพ</h2><p>เปิดการ์ด 3 ใบที่เป็นชุดเดียวกัน: คำศัพท์ภาษาอังกฤษ ความหมายภาษาไทย และภาพ</p></div>
+  </div>
+  <div class="game2-modes" role="group" aria-label="เลือกระดับความยาก">
+    <button type="button" class="game2-mode" id="game2Normal" aria-pressed="true">โหมดปกติ</button>
+    <button type="button" class="game2-mode" id="game2Hard" aria-pressed="false">โหมดยาก</button>
+  </div>
+  <div class="game2-hud" aria-live="polite">
+    <div><small>ชุดที่จับได้</small><strong id="game2Pairs">0 / 3</strong></div>
+    <div><small>จำนวนชุดที่ลอง</small><strong id="game2Moves">0</strong></div>
+    <div><small>เวลา</small><strong id="game2Time">ไม่จำกัด</strong></div>
+  </div>
+  <div class="game2-grid" id="game2Grid" role="group" aria-label="ตารางการ์ด 3 คูณ 3"></div>
+  <p class="game2-status" id="game2Status" aria-live="polite">เลือกโหมดแล้วกดเริ่มเกม</p>
+  <div class="game2-actions">
+    <button type="button" class="game2-start" id="game2Start">เริ่มเกม</button>
+    <button type="button" class="game2-restart" id="game2Restart" hidden>เริ่มใหม่</button>
+  </div>
+</section>
+
 </main>
-<footer><div><b>GRAMMARLAB.</b><br>เรียนภาษาอังกฤษทีละก้าว</div><div class="footer-contact"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=potitusafe%40gmail.com&amp;su=Message%20from%20GrammarLab&amp;body=Hello%2C%20I%20would%20like%20to%20share%3A%20" target="_blank" rel="noopener noreferrer">ส่งข้อความถึงเจ้าของ (เปิด Gmail)</a><span class="footer-owners">นาย ณัฐดเนย โพธิบุรี เลขที่ 1<br>นายแทนคุณ แจ่มศรี เลขที่ 5</span></div><div>INFINITIVE • Preview Version</div></footer>
+<footer><div><b>GRAMMARLAB.</b><br>เรียนภาษาอังกฤษทีละก้าว</div><div class="footer-contact"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=potitusafe%40gmail.com&amp;su=Message%20from%20GrammarLab&amp;body=Hello%2C%20I%20would%20like%20to%20share%3A%20" target="_blank" rel="noopener noreferrer">ส่งข้อความถึงเจ้าของ (เปิด Gmail)</a><span class="footer-owners">นาย ณัฐดนัย โพธิบุรี เลขที่ 1<br>นายแทนคุณ แจ่มศรี เลขที่ 5</span></div><div>INFINITIVE • Preview Version</div></footer>
 <div class="surprise-controls" aria-label="Spooky surprise controls">
   <button type="button" id="surpriseTrigger" title="Show the spooky surprise now" disabled>1</button>
   <button type="button" id="surpriseToggle" aria-pressed="false" title="Turn jumpscare on">Jumpscare Off</button>
@@ -463,9 +534,19 @@ if(gamesButton && gamesMenu){
     }
   });
 }
+const lessonGameButton=document.getElementById("openGamesFromLesson");
+if(lessonGameButton && gamesButton && gamesMenu){
+  lessonGameButton.addEventListener("click",event=>{
+    event.stopPropagation();
+    gamesMenu.hidden=false;
+    gamesButton.setAttribute("aria-expanded","true");
+    const firstGame=gamesMenu.querySelector(".game-row");
+    if(firstGame)firstGame.focus();
+  });
+}
 
 
-// GAME 1: Run from the Police
+// GAME 1: หนีตำรวจ
 (function(){
   const menu=document.getElementById("gamesMenu");
   const gameRows=menu ? [...menu.querySelectorAll(".game-row")] : [];
@@ -499,7 +580,7 @@ if(gamesButton && gamesMenu){
   });
   const questions=[
     {q:"ป้ายกั้นขวางทาง! เลือกประโยคที่ใช้ to-infinitive ถูกต้อง",a:["I want to play.","I want playing.","I want played.","I want plays."],c:0,why:"หลัง want ใช้ to-infinitive: want to play"},
-    {q:"มีกรวยขวางอยู่! เติมคำให้ถูก: She decided ___ home.",a:["go","going","to go","goes"],c:2,why:"decide ตามด้วย to-infinitive: decided to go"},
+    {q:"มีกรวยขวางอยู่! เติมคำให้ถูก: He decided ___ engineering.",a:["study","studying","to study","studies"],c:2,why:"decide ตามด้วย to-infinitive: decided to study"},
     {q:"เจอรั้วเตี้ย! เลือกประโยคที่ถูกต้อง",a:["He can to swim.","He can swim.","He can swimming.","He can swims."],c:1,why:"หลัง can ใช้ bare infinitive: can swim"},
     {q:"ตำรวจวางแผงกั้น! เติมคำ: They enjoy ___ football.",a:["to play","play","plays","playing"],c:3,why:"หลัง enjoy ใช้ gerund: enjoy playing"},
     {q:"เจอป้าย STOP! เลือกประโยคที่ถูกต้อง",a:["We hope to win.","We hope winning.","We hope win.","We hope wins."],c:0,why:"hope ตามด้วย to-infinitive: hope to win"},
@@ -532,7 +613,7 @@ if(gamesButton && gamesMenu){
     const overview=event.detail;
     if(!(overview instanceof HTMLElement))return;
     const heading=document.createElement("h3");
-    heading.textContent="Game 1: Run from the Police";
+    heading.textContent="Game 1: หนีตำรวจ";
     const list=document.createElement("ol");
     questions.forEach(item=>{
       const entry=document.createElement("li");
@@ -720,10 +801,13 @@ if(gamesButton && gamesMenu){
   }
   function renderHearts(){hearts.textContent="❤️ ".repeat(life).trim() + " " + "♡ ".repeat(3-life).trim();}
   function showGame(){
+    document.dispatchEvent(new Event("game1-open"));
     menu.hidden=true;
     courseDecorations.hidden=true;
     if(gameButton) gameButton.setAttribute("aria-expanded","false");
     mainPages.forEach(el=>el.style.display="none");
+    const otherGame=document.getElementById("game2Panel");
+    if(otherGame)otherGame.hidden=true;
     panel.hidden=false;
     panel.scrollIntoView({behavior:"smooth",block:"start"});
   }
@@ -921,8 +1005,198 @@ if(gamesButton && gamesMenu){
     else if(event.key==="ArrowLeft" || event.key.toLowerCase()==="a"){event.preventDefault();moveForwardBackward(-1);}
     else if(event.key==="ArrowRight" || event.key.toLowerCase()==="d"){event.preventDefault();moveForwardBackward(1);}
   });
+  document.addEventListener("game2-open",()=>{if(playing)resetGame();});
   gameRows[0].addEventListener("click",showGame);
   renderHearts();
+})();
+
+// GAME 2: Vocabulary matching
+(function(){
+  const menu=document.getElementById("gamesMenu");
+  const gameRows=menu ? [...menu.querySelectorAll(".game-row")] : [];
+  const panel=document.getElementById("game2Panel");
+  const game1Panel=document.getElementById("game1Panel");
+  const gameButton=document.getElementById("gamesButton");
+  const mainPages=[...document.querySelectorAll("main > .page, main > .page-controls")];
+  if(!menu || !gameRows[1] || !panel)return;
+
+  const grid=document.getElementById("game2Grid");
+  const normalButton=document.getElementById("game2Normal");
+  const hardButton=document.getElementById("game2Hard");
+  const pairsEl=document.getElementById("game2Pairs");
+  const movesEl=document.getElementById("game2Moves");
+  const timeEl=document.getElementById("game2Time");
+  const statusEl=document.getElementById("game2Status");
+  const startButton=document.getElementById("game2Start");
+  const restartButton=document.getElementById("game2Restart");
+  const sets=[
+    {word:"decide",meaning:"ตัดสินใจ",image:"🤔"},
+    {word:"learn",meaning:"เรียนรู้",image:"📚"},
+    {word:"plan",meaning:"วางแผน",image:"🗓️"}
+  ];
+  let mode="normal",started=false,moves=0,matchedSets=0,selectedCards=[],locked=false;
+  let timer=null,mismatchTimer=null,deadline=0;
+
+  function shuffle(items){
+    const result=[...items];
+    for(let i=result.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [result[i],result[j]]=[result[j],result[i]];
+    }
+    return result;
+  }
+  function updateHud(){
+    pairsEl.textContent=matchedSets+" / "+sets.length;
+    movesEl.textContent=String(moves);
+  }
+  function cardLabel(card){
+    const type=card.dataset.type==="word"?"คำศัพท์":card.dataset.type==="meaning"?"ความหมาย":"ภาพ";
+    return type+": "+card.dataset.value;
+  }
+  function hideCard(card){
+    card.classList.remove("is-open","is-mismatch");
+    card.setAttribute("aria-pressed","false");
+    card.setAttribute("aria-label","การ์ด "+card.dataset.position+" คว่ำอยู่");
+    card.querySelector(".game2-card-type").textContent="";
+    card.querySelector(".game2-card-text").textContent="";
+    card.querySelector(".card-back").hidden=false;
+  }
+  function revealCard(card){
+    card.classList.add("is-open");
+    card.setAttribute("aria-pressed","true");
+    card.setAttribute("aria-label",cardLabel(card));
+    card.querySelector(".card-back").hidden=true;
+    card.querySelector(".game2-card-type").textContent=card.dataset.type==="word"?"คำศัพท์":card.dataset.type==="meaning"?"ความหมาย":"ภาพ";
+    card.querySelector(".game2-card-text").textContent=card.dataset.value;
+  }
+  function endGame(won){
+    started=false;
+    if(timer!==null){clearInterval(timer);timer=null;}
+    grid.querySelectorAll(".game2-card").forEach(card=>{card.disabled=true;});
+    statusEl.dataset.state=won?"win":"loss";
+    statusEl.textContent=won
+      ?"เก่งมาก! จับครบทั้ง 3 ชุดแล้ว"
+      :"หมดเวลา! ลองเริ่มใหม่อีกครั้ง";
+    restartButton.hidden=false;
+  }
+  function updateTimer(){
+    const remaining=Math.max(0,Math.ceil((deadline-Date.now())/1000));
+    timeEl.textContent=remaining+" วินาที";
+    if(remaining<=0){clearInterval(timer);timer=null;endGame(false);}
+  }
+  function selectCard(card){
+    if(!started || locked || card.disabled || card.classList.contains("is-open"))return;
+    revealCard(card);
+    selectedCards.push(card);
+    if(selectedCards.length<3){
+      statusEl.textContent="เลือกอีก "+(3-selectedCards.length)+" ใบให้ครบชุด";
+      return;
+    }
+    moves++;
+    updateHud();
+    const group=selectedCards;
+    selectedCards=[];
+    if(group.every(item=>item.dataset.set===group[0].dataset.set)){
+      group.forEach(match=>{
+        match.classList.add("is-matched");
+        match.setAttribute("aria-label",cardLabel(match)+" จับคู่ครบชุด");
+        match.disabled=true;
+      });
+      matchedSets++;
+      updateHud();
+      statusEl.textContent="ถูกต้อง! ครบชุดแล้ว";
+      if(matchedSets===sets.length)endGame(true);
+      return;
+    }
+    locked=true;
+    group.forEach(item=>item.classList.add("is-mismatch"));
+    statusEl.textContent="ยังไม่เป็นชุดเดียวกัน ลองจำตำแหน่งไว้";
+    const openCards=group;
+    mismatchTimer=setTimeout(()=>{
+      openCards.forEach(hideCard);
+      locked=false;mismatchTimer=null;
+      if(started)statusEl.textContent="เลือกการ์ด 3 ใบที่เป็นชุดเดียวกัน";
+    },750);
+  }
+  function renderBoard(){
+    const cards=shuffle(sets.flatMap((set,index)=>[
+      {set:index,type:"word",value:set.word},
+      {set:index,type:"meaning",value:set.meaning},
+      {set:index,type:"image",value:set.image}
+    ]));
+    grid.replaceChildren();
+    cards.forEach((item,index)=>{
+      const card=document.createElement("button");
+      card.type="button";card.className="game2-card";
+      card.dataset.set=String(item.set);
+      card.dataset.type=item.type;
+      card.dataset.value=item.value;
+      card.dataset.position=String(index+1);
+      card.setAttribute("aria-label","การ์ด "+(index+1)+" คว่ำอยู่");
+      card.setAttribute("aria-pressed","false");
+      card.disabled=true;
+      card.innerHTML='<span class="card-back" aria-hidden="true">?</span><span class="game2-card-type"></span><span class="game2-card-text"></span>';
+      card.addEventListener("click",()=>selectCard(card));
+      grid.appendChild(card);
+    });
+  }
+  function resetBoard(){
+    if(timer!==null){clearInterval(timer);timer=null;}
+    if(mismatchTimer!==null){clearTimeout(mismatchTimer);mismatchTimer=null;}
+    mode=hardButton.getAttribute("aria-pressed")==="true"?"hard":"normal";
+    started=false;moves=0;matchedSets=0;selectedCards=[];locked=false;
+    updateHud();
+    timeEl.textContent=mode==="hard"?"75 วินาที":"ไม่จำกัด";
+    statusEl.dataset.state="";
+    statusEl.textContent="เลือกโหมดแล้วกดเริ่มเกม";
+    startButton.hidden=false;restartButton.hidden=true;
+    renderBoard();
+  }
+  function showGame(){
+    document.dispatchEvent(new Event("game2-open"));
+    menu.hidden=true;
+    if(gameButton)gameButton.setAttribute("aria-expanded","false");
+    mainPages.forEach(el=>el.style.display="none");
+    const decorations=document.getElementById("courseDecorations");
+    if(decorations)decorations.hidden=true;
+    if(game1Panel)game1Panel.hidden=true;
+    panel.hidden=false;
+    panel.scrollIntoView({behavior:"smooth",block:"start"});
+  }
+  function hideGame(){
+    resetBoard();
+    panel.hidden=true;
+    mainPages.forEach(el=>el.style.display="");
+    const decorations=document.getElementById("courseDecorations");
+    if(decorations)decorations.hidden=currentPage===0;
+    menu.hidden=false;
+    if(gameButton)gameButton.setAttribute("aria-expanded","true");
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+  function chooseMode(nextMode){
+    normalButton.setAttribute("aria-pressed",String(nextMode==="normal"));
+    hardButton.setAttribute("aria-pressed",String(nextMode==="hard"));
+    resetBoard();
+  }
+  normalButton.addEventListener("click",()=>chooseMode("normal"));
+  hardButton.addEventListener("click",()=>chooseMode("hard"));
+  startButton.addEventListener("click",()=>{
+    started=true;startButton.hidden=true;restartButton.hidden=false;
+    grid.querySelectorAll(".game2-card").forEach(card=>{card.disabled=false;});
+    statusEl.textContent="เลือกการ์ด 3 ใบที่เป็นชุดเดียวกัน";
+    if(mode==="hard"){
+      deadline=Date.now()+75000;
+      updateTimer();
+      timer=setInterval(updateTimer,250);
+    }
+  });
+  restartButton.addEventListener("click",resetBoard);
+  document.getElementById("game2Back").addEventListener("click",hideGame);
+  document.addEventListener("game1-open",()=>{
+    if(!panel.hidden){resetBoard();panel.hidden=true;}
+  });
+  gameRows[1].addEventListener("click",showGame);
+  resetBoard();
 })();
 
 </script>
