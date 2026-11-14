@@ -629,14 +629,31 @@ if(gamesButton && gamesMenu){
     const projectile=document.createElement("span");
     projectile.className="game-projectile";
     projectile.setAttribute("aria-hidden","true");
-    projectile.style.bottom=lanes[targetLane]+"px";
     scene.appendChild(projectile);
-    requestAnimationFrame(()=>{projectile.style.left="35%";});
+    const sceneBounds=scene.getBoundingClientRect();
+    const runnerBounds=runner.getBoundingClientRect();
+    const projectileSize=projectile.getBoundingClientRect().width;
+    const runnerCenterX=runnerBounds.left+runnerBounds.width/2;
+    const runnerCenterY=sceneBounds.bottom-lanes[targetLane]-runnerBounds.height/2;
+    projectile.style.bottom=(sceneBounds.bottom-runnerCenterY-projectileSize/2)+"px";
+    const targetLeft=runnerCenterX-projectileSize/2-sceneBounds.left;
+    requestAnimationFrame(()=>{projectile.style.left=targetLeft+"px";});
     const timer=setTimeout(()=>{
       projectileTimers.delete(timer);
+      const projectileBounds=projectile.getBoundingClientRect();
       projectile.remove();
       if(!playing || policeSafe)return;
-      if(laneIndex===targetLane)damagePlayer();
+      const currentRunnerBounds=runner.getBoundingClientRect();
+      const hitboxWidth=currentRunnerBounds.width*.34;
+      const hitboxHeight=currentRunnerBounds.height*.34;
+      const hitboxLeft=currentRunnerBounds.left+(currentRunnerBounds.width-hitboxWidth)/2;
+      const hitboxTop=currentRunnerBounds.top+(currentRunnerBounds.height-hitboxHeight)/2;
+      const hitboxRight=hitboxLeft+hitboxWidth;
+      const hitboxBottom=hitboxTop+hitboxHeight;
+      const hitCenterX=projectileBounds.left+projectileBounds.width/2;
+      const hitCenterY=projectileBounds.top+projectileBounds.height/2;
+      if(hitCenterX>=hitboxLeft && hitCenterX<=hitboxRight &&
+         hitCenterY>=hitboxTop && hitCenterY<=hitboxBottom)damagePlayer();
     },1000);
     projectileTimers.add(timer);
   }
