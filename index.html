@@ -334,7 +334,7 @@ const qs=[
 {q:"She can ___ very fast.",a:["runs","to run","run","running"],c:2,why:"หลัง can ใช้กริยารูปพื้นฐานโดยไม่ใส่ to"},
 {q:"They decided ___ at home.",a:["stay","staying","to stay","stays"],c:2,why:"decide มักตามด้วย to + V.1"},
 {q:"My parents made me ___ my room.",a:["to clean","cleaning","clean","cleans"],c:2,why:"หลัง make + กรรม ใช้กริยารูปพื้นฐานโดยไม่ใส่ to"},
-{q:"She wants ___ biology.",a:["study","to study","studying","studies"],c:1,why:"want ตามด้วย to + V.1: wants to study"}
+{q:"She wants ___ a new language.",a:["learn","to learn","learning","learns"],c:1,why:"want ตามด้วย to + V.1: wants to learn"}
 ];let index=0,score=0,answered=false;
 function render(){answered=false;let q=qs[index];document.getElementById("qcount").textContent=`QUESTION ${index+1} OF ${qs.length}`;document.getElementById("question").textContent=q.q;document.getElementById("feedback").textContent="";document.getElementById("next").style.display="none";let box=document.getElementById("options");box.innerHTML="";q.a.forEach((v,i)=>{let b=document.createElement("button");b.className="option";b.textContent=String.fromCharCode(65+i)+". "+v;b.onclick=()=>check(i,b);box.appendChild(b)})}
 function check(i,btn){if(answered)return;answered=true;let q=qs[index];document.querySelectorAll(".option").forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add("selected")});let f=document.getElementById("feedback");if(i===q.c){score++;f.textContent="ถูกต้อง! "+q.why;f.style.color="#16805c"}else{f.textContent="ยังไม่ถูกนะ คำตอบคือ “"+q.a[q.c]+"” — "+q.why;f.style.color="#bd653c"}let n=document.getElementById("next");n.style.display="inline-block";n.textContent=index===qs.length-1?"ดูคะแนน →":"ข้อต่อไป →"}
